@@ -8,6 +8,6 @@ spring.datasource.password=obelisco
 spring.jpa.show-sql=true
 
 #CREAR TABLAS DESDE LOS MODELOS - COMENTAR DESPUES DE LA PRIMERA EJECUCION O SE RESETEARAN LAS TABLAS DE LA DB
-#spring.jpa.generate-ddl=true
-#spring.jpa.hibernate.ddl-auto=create-drop
-#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true

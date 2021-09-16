@@ -18,9 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping ("/main/")
 public class Main_record_rest {
-	
-	final String Admin = "AdminKruger2021";
-	
     @Autowired
     private Main_record_service main_record_service;
     
@@ -28,9 +25,6 @@ public class Main_record_rest {
     private ResponseEntity<List<Main_record>> getAll_main_record (){
     	return ResponseEntity.ok(main_record_service.findAll());
     }
-    
-    //GUARDO EL ADMINISTRADOR EN LA BASE DE DATOS
-    private 
     
     //RECIVO LAS VARIABLES POST DE LOS DATOS DEL FORMULARIO PARA EL REGISTRO EN LA DB
     @PostMapping
