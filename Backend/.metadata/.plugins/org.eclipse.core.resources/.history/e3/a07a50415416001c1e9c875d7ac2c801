@@ -1,0 +1,5 @@
+package com.kruger.vaccinationsystem.rest;
+
+public class secondary_record_rest {
+
+}

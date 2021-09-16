@@ -1,0 +1,31 @@
+package com.kruger.vaccinationsystem.rest;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kruger.vaccinationsystem.model.secondary_record;
+import com.kruger.vaccinationsystem.service.secondary_record_service;
+
+@RestController
+@RequestMapping ("/secondary/")
+public class secondary_record_rest {
+	@Autowired
+	private secondary_record_service secondary_record_service;
+	
+	@GetMapping
+	private ResponseEntity<List<secondary_record>> getAll_secondary_record(){
+		return ResponseEntity.ok(secondary_record_service.findAll());
+	}
+	
+	@GetMapping ("{id}")
+	private ResponseEntity<Optional<secondary_record>> getById_secondary_record (@PathVariable ("id") Long id) {
+		return ResponseEntity.ok(secondary_record_service.findById(id));
+	}
+}

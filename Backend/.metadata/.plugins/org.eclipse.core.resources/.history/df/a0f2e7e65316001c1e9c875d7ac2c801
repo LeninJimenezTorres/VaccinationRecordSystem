@@ -1,0 +1,5 @@
+package com.kruger.vaccinationsystem.repository;
+
+public class main_record_repository {
+
+}

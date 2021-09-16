@@ -1,0 +1,13 @@
+#CONEXION CON LA BASE DE DATOS
+spring.jpa.database=POSTGRESQL
+#spring.datasource.platform=postgres
+spring.sql.init.platform=postgres
+spring.datasource.url=jdbc:postgresql://localhost:5432/DB_SistemaVacKruger
+spring.datasource.username=postgres
+spring.datasource.password=obelisco
+spring.jpa.show-sql=true
+
+#CREAR TABLAS DESDE LOS MODELOS - COMENTAR DESPUÉS DE LA PRIMERA EJECUCIÓN O SE RESETEARÁN LAS TABLAS DE LA DB
+#spring.jpa.generate-ddl=true
+#spring.jpa.hibernate.ddl-auto=create-drop
+#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true

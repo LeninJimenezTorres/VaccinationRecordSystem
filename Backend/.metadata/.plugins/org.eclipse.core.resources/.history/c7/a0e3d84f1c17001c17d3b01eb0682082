@@ -1,0 +1,8 @@
+package com.kruger.vaccinationsystem.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.kruger.vaccinationsystem.model.secondary_record;
+
+public interface secondary_record_repository extends JpaRepository<secondary_record, Long>{
+
+}

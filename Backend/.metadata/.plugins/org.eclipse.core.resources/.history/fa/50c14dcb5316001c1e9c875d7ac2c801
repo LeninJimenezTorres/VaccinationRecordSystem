@@ -1,0 +1,5 @@
+package com.kruger.vaccinationsystem.model;
+
+public class secondary_record {
+
+}
