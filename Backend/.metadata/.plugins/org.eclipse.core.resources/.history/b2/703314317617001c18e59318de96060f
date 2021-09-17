@@ -19,17 +19,8 @@ public class Main_record_service implements Main_record_repository {
 	@Autowired
     private Main_record_repository main_record_repository;
 	
-	//AGREGO LOS DATOS DE USUARIO ADMINISTRADOR
-	final String Admin = "AdminKruger2021";
-	final String AdminKey = "AdminKrugerPassword";
 	@Autowired
-    Main_record_service addAdmin;
-	
-	//GUARDO EL ADMINISTRADOR EN LA BASE DE DATOS
-	@Override
-	public void addAdmin(String[] args) throws Exception{
-    	addAdmin
-    }
+    Main_record_repository AddAdmin;
 	
 	@Override
 	public List<Main_record> findAll() {
