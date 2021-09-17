@@ -1,11 +1,13 @@
-VaccinationRecordSystem
+VaccinationRecordSystem | Backend
 
+it is recommended to use the software Postman or a browser to test each request.
 
-This is a CRUD system Java-SpringBoot based with Postgresql databases and Angular-Bootstrap in frontend. 
+CHARACTERISTICS
+- Language: Java version 11
+- Framework: Spring Boot 2.5.4
 
-The project is separated in Frontend and Backend programming. Inside each folder you have the instructions to run it.
-Both Frontend and Backend can running independently of the other and you can test it but they complement each other.
- 
+INDICATIONS
+- The first time you have to run the folder 
 
 
 
