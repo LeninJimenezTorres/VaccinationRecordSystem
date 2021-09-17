@@ -19,7 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping ("/main/")
 public class Main_record_rest {
 	
-	@Autowired
+	final String Admin = "AdminKruger2021";
+	final String AdminKey = "AdminKrugerPassword";
+	
+    @Autowired
     private Main_record_service main_record_service;
     
     @GetMapping
@@ -28,9 +31,7 @@ public class Main_record_rest {
     }
     
     //GUARDO EL ADMINISTRADOR EN LA BASE DE DATOS
-    public static void addAdmin(String[] args) throws Exception{
-    	
-    }
+    private 
     
     //RECIVO LAS VARIABLES POST DE LOS DATOS DEL FORMULARIO PARA EL REGISTRO EN LA DB
     @PostMapping
