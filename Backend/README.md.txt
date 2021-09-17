@@ -7,7 +7,8 @@ CHARACTERISTICS
 - Framework: Spring Boot 2.5.4
 
 INDICATIONS
-- The first time you have to run the folder 
+- The first time you have to uncomment the last three lines of the file application.properties of the source VaccinationSystem/src/main/resources/
+  After the first running, comment the last three lines of the file
 
 
 
